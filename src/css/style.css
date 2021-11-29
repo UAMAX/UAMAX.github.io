@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+body {
+	font-family: "Franklin Gothic Medium", Montserrat, Arial,  sans-serif;
+	min-width: 1360px;
+}
+.info_about_me>h2, .what_I_can_do>div>h2, .cases>h2, .statistics>div>h2, .reviews>h2, .contacts>div>h2 {
+	font-size: 32px;
+	color: #263244;
+	text-align: center;
+}
+hr {
+	width: 70px;
+	height: 4px;
+	margin: 25px auto 0;
+	background-color: #d17700;
+}
+
+nav {
+	widows: 100%;
+	height: 61px;
+	background-color: #344051;
+	color: #fff;
+}
+.logo {
+	font-size: 24px;
+	line-height: 61px;
+	padding-left: 20.8%;
+	float: left;
+}
+
+.menu {
+	float: left;
+	padding-left: 23%;
+}
+.menu li{
+	float: left;
+	line-height: 61px;
+	margin-right: 40px;
+	font-size: 16px;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+}
+.main {
+	width: 100%;
+	height: calc(100% - 61px);
+	background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
+}
+.title_container {
+	float: left;
+	margin: 18% 0 0 18.9%;
+	color: #2c384a;
+	text-align: center;
+}
+.title_container>h1 {
+	font-size: 80px;
+	font-weight: 500;
+	letter-spacing: -4px;
+}
+.title_container>h4 {
+	margin-top: 18px;
+	font-size: 20px;
+	color: #79818d;
+}
+.title_container>input {
+	margin: 38px 12px 0;
+	height: 40px;
+	text-align: center;
+	border: 2px solid #6d7682;
+	background: none;
+	border-radius: 5px;
+	color: #6d7682;
+	font-size: 18px;
+	padding: 0 14px;
+}
+
+.info_about_me {
+	float: left;
+	width: 100%;
+	height: 676px;	
+	margin-top: 88px;
+}
+.info_about_me>div {
+	width: 200px;
+	height: 200px;
+	background: url(../img/boy.png) 70% 100%/auto 100% no-repeat #d9ffff;
+	border-radius: 50%;
+	filter: grayscale(70%);
+	margin: 60px auto 30px;
+}
+.info_about_me>p {
+	font-size: 18px;
+	margin: 0 auto 50px;
+	width: 730px;
+	color: #3f495a;
+}
+.info_about_me>input {
+	margin: 0 43.5%;
+	height: 34px;
+	text-align: right;
+	border: 2px solid #6f707e;
+	background: none;
+	border-radius: 5px;
+	color: #6f707e;
+	font-size: 18px;
+	padding: 0 14px 0 40px;
+	background: url(../img/icon/download.svg) 14px 50%/auto 50% no-repeat #eeeeee;
+}
+
+.what_I_can_do {
+	float: left;
+	width: 100%;
+	height: 522px;
+	background: url(../img/bg2.jpg) center/cover no-repeat;
+}
+.what_I_can_do>div {
+	margin-top: 88px;
+	width: 100%;
+	height: 100%;
+}
+.what_I_can_do h4 {
+	font-size: 18px;
+	color: #cf7600;
+	text-align: center;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.what_I_can_do p {
+	font-size: 16px;
+	color: #3f495a;
+	text-align: center;
+}
+.what_I_can_do>div>div {	
+	margin: 100px auto 0;
+	width: 462px;
+	word-spacing: 38px; /*Чтобы задать отступ между web_design и development (они считаются за текст из-за |display: inline-block;|)*/
+}
+.web_design, .development {
+	word-spacing: 0px;
+	height: 170px;
+	width: 210px;
+	display: inline-block;
+}
+.what_I_can_do img {
+	height: 55px;
+	margin: 0 auto 20px;
+	display: block;
+}
+
+.cases {
+	float: left;
+	width: 100%;
+	height: 1000px;
+	margin: 88px auto;
+}
+.cases>p {
+	font-size: 16px;
+	color: #3f495a;
+	text-align: center;
+	margin-top: 35px;
+}
+.case {
+	margin: 40px auto 0;
+	width: 1168px;
+
+}
+.case>img {
+	margin: 0 auto 20px;
+	display: block;
+}
+.case h3 {
+	font-size: 25px;
+	color: #384354;
+	margin-bottom: 5px;
+}
+.case div {
+	float: left;
+	display: inline-block;
+	margin-right: 80px;
+}
+.case>div>p {
+	font-size: 16px;
+	color: #3f495a;
+	margin-bottom: 10px;
+}
+.case input {
+	font-size: 20px;
+	color: #fff;
+	width: 200px;
+	height: 40px;
+	background-color: #63b5ae;
+	border-radius: 5px;
+	line-height: 40px;
+	margin-top: 10px;
+}
+.case>p {
+	float: left;
+	font-size: 20px;
+	color: #3f495a;
+	display: inline-block;
+}
+.case>h4 {
+	font-size: 20px;
+	color: #384354;
+}
+
+.cost_calculation {
+	float: left;
+	width: 100%;
+	margin: 0 auto 88px;
+}
+form {
+	margin: 0 auto;
+	width: 890px;
+	height: 700px;
+}
+.cost_calculation h2 {
+	font-size: 46px;
+	color: #1c2534;
+	text-align: center;
+}
+.cost_calculation h3 {
+	font-size: 30px;
+	color: #1c2534;
+	margin: 38px auto 18px;
+}
+select {
+	font-size: 16px;
+	color: #737373;
+	font-weight: 600;
+	width: 890px;
+	height: 56px;
+	border: 0;
+	outline: 0;
+	background: url(../img/icon/arrow.svg) 98% 50%/auto 20% no-repeat #eeeeee;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+.cost_calculation hr {
+	background-color: #d1d1d1;
+	width: 890px;
+	height: 2px;
+	margin: 37px auto 0;
+}
+.deadlines_cost p{
+	margin-top: 15px;
+	font-size: 20px;
+	color: #1c2534;
+}
+.deadlines_cost span{
+	float: right;
+}
+
+.statistics {
+	float: left;
+	width: 100%;
+	height: 522px;
+	background: url(../img/bg3.jpg) center/cover no-repeat;
+	text-align: center;
+	color: #323e4f;
+}
+.statistics>div	{
+	padding-top: 105px;
+}
+.statistics>div>div {	
+	margin: 100px auto 0;
+	width: 966px;
+	word-spacing: 38px;
+}
+.happy, .hour_work, .completed, .reward {
+	word-spacing: 0px;
+	height: 170px;
+	width: 210px;
+	display: inline-block;
+}
+.statistics img {
+	margin: 0 auto 25px;
+	display: block;
+}
+.completed>img {
+	margin: 0 38% 25px;
+}
+.statistics>div>div h2 {
+	font-family: Impact, sans-serif;
+	font-size: 38px;
+	margin-bottom: 25px;
+}
+.statistics>div>div h4 {
+	font-size: 16px;
+}
+
+.reviews {
+	float: left;
+	width: 100%;
+	height: 501px;	
+	margin: 88px auto;
+}
+.reviews_card {
+	width: 710px;
+	height: 380px;
+	margin: 0 auto;
+}
+.reviews_card>div {
+	width: 200px;
+	height: 200px;
+	background: url(../img/boy.png) 70% 100%/auto 100% no-repeat #d9ffff;
+	border-radius: 50%;
+	filter: grayscale(70%);
+	margin: 60px auto 30px;
+}
+.reviews_card>p {
+	width: 100%;
+	height: 64px;
+	text-align: center;
+	font-size: 16px;
+	color: #233042;
+}
+.reviews_card>form {
+	width: 100%;
+	height: 13px;
+	text-align: center;
+}
+/*form>input {
+
+}
+*/
+.contacts {
+	float: left;
+	width: 100%;
+	height: 808px;
+	background: url(../img/bg4.jpg) center/cover no-repeat;
+}
+.contacts>div {
+	margin-top: 88px;
+	color: #fff;
+	width: 100%;
+}
+.contacts>div>h2 {
+	color: #fff;
+}
+.contacts>div>p {
+	font-family: Calibri, sans-serif;
+	font-size: 16px;
+	text-align: center;
+	margin-top: 35px;
+}
+.data {
+	width: 654px;
+	height: 80px;
+	margin: 45px auto 36px;
+}
+.data>div {
+	font-family: Calibri, sans-serif;
+	margin: 0 24px;
+	float: left;
+	display: inline-block;
+	width: 170px;
+	height: 80px;
+	text-align: center;
+}
+.data img {
+	height: 28px;
+	margin: 0 auto 20px;
+}
+.contacts h3 {
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 42px;
+}
+.contacts form {
+	width: 764px;
+	height: 216px;
+	text-align: center;
+}
+#name, #mail {
+	float: left;
+	margin: 0 15px 14px;
+	width: 352px;
+	height: 34px;
+}
+textarea {
+	width: 734px;
+	height: 94px;
+	margin: 0 15px 28px;
+	resize: none;
+}
+#send {
+	width: 126px;
+	height: 46px;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	background: transparent;
+	line-height: 46px;
+	font-size: 20px;
+}
+.other_contact {
+	width: 500px;
+	margin: 72px auto;
+}
+.other_contact>a {
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	background: transparent; /*rgba(0, 0, 0, 0.4)*/
+	margin-left:34px;
+}
+/*.other_contact>a[title="facebook"] {
+	margin-left:34px;
+}*/
+a[title="twitter"] {
+	margin-left:38px;
+}
+a[title="chto_eto"], a[title="instagram"] {
+	margin-left:43px;
+}
+a[title="github"], a[title="i_chto_eto"] {
+	margin-left:42px;
+}
+
+.map {
+	float: left;
+	width: 100%;
+	height: 350px;
+	background: none;
+}
+
+footer {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #fff;
+	float: left;
+	width: 100%;.
+	height: 96px;
+	background: url(../img/footer_bg.jpg) center/cover no-repeat;
+	text-align: center;
+	line-height: 96px;
+}
