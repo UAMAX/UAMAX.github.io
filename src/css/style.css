@@ -14,10 +14,26 @@ hr {
 	margin: 25px auto 0;
 	background-color: #d17700;
 }
+@keyframes borderV {
+	0% {
+		outline: 2px dashed #dfe0e4;
+		border-radius: 0%;
+	}
+	50% {
+		outline: 2px dashed #313d4e;
+		border-radius: 30%;
+	}
+	100% {
+		outline: 2px dashed #313d4e;
+		border-radius: 5%;
+	}
+}
 
 nav {
-	widows: 100%;
+	position: fixed;
+	width: 100%;
 	height: 61px;
+	z-index: 1;
 	background-color: #344051;
 	color: #fff;
 }
@@ -27,32 +43,57 @@ nav {
 	padding-left: 20.8%;
 	float: left;
 }
-
 .menu {
 	float: left;
 	padding-left: 23%;
 }
-.menu li{
-	float: left;
-	line-height: 61px;
+.menu li {
+	float: left;	
 	margin-right: 40px;
+	line-height: 61px;
 	font-size: 16px;
 }
+li>a {
+	float: left;
+	transform: scale(1);
+	transition-duration: 0.1s;
+}
+li>a:visited {color: #fff;}
+li>a:hover {
+	color: #e88604;
+	font-weight: 900;
+	transition-duration: 0.1s;
+}
+li>a:active {
+	line-height: 61px;
+	font-weight: 400;
+	transform: scale(1.2);
+	transition-duration: 0.1s;
+}
+.menu li:nth-child(1) {animation-delay: .35s;}
+.menu li:nth-child(2) {animation-delay: .425s;}
+.menu li:nth-child(3) {animation-delay: .5s;}
+.menu li:nth-child(4) {animation-delay: .575s;}
+.menu li:nth-child(5) {animation-delay: .65s;}
+.menu li:nth-child(6) {animation-delay: .725s;}
 
 main {
+	padding-top: 61px;
 	width: 100%;
 	height: 100%;
 }
 .main {
 	width: 100%;
-	height: calc(100% - 61px);
+	height: 100%;
 	background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
+	background-attachment: fixed;
 }
 .title_container {
 	float: left;
 	margin: 18% 0 0 18.9%;
 	color: #2c384a;
 	text-align: center;
+	animation-delay: .8s;
 }
 .title_container>h1 {
 	font-size: 80px;
@@ -74,6 +115,21 @@ main {
 	color: #6d7682;
 	font-size: 18px;
 	padding: 0 14px;
+	transform: scale(1);
+	transition-duration: 0.1s;
+}
+.title_container>input:hover {
+	color: #fff;
+	border: 2px solid #fff;
+	background: #2c384a;
+	transition-duration: 0.1s;
+}
+.title_container>input:active {
+	transform: scale(1.1);
+	transition-duration: 0.1s;
+	color: #fff;
+	border: 2px solid #fff;
+	background: #2c384a;
 }
 
 .info_about_me {
@@ -89,7 +145,10 @@ main {
 	border-radius: 50%;
 	filter: grayscale(70%);
 	margin: 60px auto 30px;
+	transform: scale(1); 
+	transition-duration: .2s;
 }
+.info_about_me>div:hover {transform: scale(1.2); transition-duration: .2s;}
 .info_about_me>p {
 	font-size: 18px;
 	margin: 0 auto 50px;
@@ -107,6 +166,20 @@ main {
 	font-size: 18px;
 	padding: 0 14px 0 40px;
 	background: url(../img/icon/download.svg) 14px 50%/auto 50% no-repeat #eeeeee;
+	transition-duration: 0.1s;
+}
+.info_about_me>input:hover {
+	color: #fff;
+	border: 2px solid #fff;
+	background: url(../img/icon/downloadHover.svg) 14px 50%/auto 50% no-repeat #2c384a;
+	transition-duration: 0.1s;
+}
+.info_about_me>input:active {
+	transform: scale(1.1);
+	transition-duration: 0.1s;
+	color: #fff;
+	border: 2px solid #fff;
+	background: url(../img/icon/downloadHover.svg) 14px 50%/auto 50% no-repeat #2c384a;
 }
 
 .what_I_can_do {
@@ -142,6 +215,16 @@ main {
 	height: 170px;
 	width: 210px;
 	display: inline-block;
+	animation-name: borderV;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	transform: scale(1); 
+	transition-duration: .2s;
+}
+.web_design:hover, .development:hover {
+	transform: scale(1.1); 
+	transition-duration: .2s;
 }
 .what_I_can_do img {
 	height: 55px;
@@ -194,6 +277,18 @@ main {
 	border-radius: 5px;
 	line-height: 40px;
 	margin-top: 10px;
+	transition-duration: 0.1s;
+}
+.case input:hover {
+	color: #fff;
+	background: #dc8756;
+	transition-duration: 0.1s;
+}
+.case input:active {
+	transform: scale(1.1);
+	transition-duration: 0.1s;
+	color: #fff;
+	background: #dc8756;
 }
 .case>p {
 	float: left;
@@ -249,21 +344,18 @@ select {
 	font-size: 20px;
 	color: #1c2534;
 }
-.deadlines_cost span{
-	float: right;
-}
+.deadlines_cost span{float: right;}
 
 .statistics {
 	float: left;
 	width: 100%;
 	height: 522px;
 	background: url(../img/bg3.jpg) center/cover no-repeat;
+	background-attachment: fixed;
 	text-align: center;
 	color: #323e4f;
 }
-.statistics>div	{
-	padding-top: 105px;
-}
+.statistics>div	{padding-top: 105px;}
 .statistics>div>div {	
 	margin: 100px auto 0;
 	width: 966px;
@@ -279,17 +371,13 @@ select {
 	margin: 0 auto 25px;
 	display: block;
 }
-.completed>img {
-	margin: 0 38% 25px;
-}
+.completed>img {margin: 0 38% 25px;}
 .statistics>div>div h2 {
 	font-family: Impact, sans-serif;
 	font-size: 38px;
 	margin-bottom: 25px;
 }
-.statistics>div>div h4 {
-	font-size: 16px;
-}
+.statistics>div>div h4 {font-size: 16px;}
 
 .reviews {
 	float: left;
@@ -337,9 +425,7 @@ select {
 	color: #fff;
 	width: 100%;
 }
-.contacts>div>h2 {
-	color: #fff;
-}
+.contacts>div>h2 {color: #fff;}
 .contacts>div>p {
 	font-family: Calibri, sans-serif;
 	font-size: 16px;
@@ -374,7 +460,7 @@ select {
 	height: 216px;
 	text-align: center;
 }
-#name, #mail {
+#name, #email {
 	float: left;
 	margin: 0 15px 14px;
 	width: 352px;
@@ -395,6 +481,20 @@ textarea {
 	background: transparent;
 	line-height: 46px;
 	font-size: 20px;
+	transition-duration: 0.1s;
+}
+#send:hover {
+	color: #0f1929;
+	border: 2px solid #0f1929;
+	background: rgba(255, 255, 255, 0.6);
+	transition-duration: 0.1s;
+}
+#send:active {
+	transform: scale(1.1);
+	transition-duration: 0.1s;
+	color: #0f1929;
+	border: 2px solid #0f1929;
+	background: #fff;	
 }
 .other_contact {
 	width: 500px;
@@ -404,21 +504,26 @@ textarea {
 	display: inline-block;
 	width: 34px;
 	height: 34px;
-	background: transparent; /*rgba(0, 0, 0, 0.4)*/
+	background: transparent; /*rgba(0, 0, 0, .4)*/
 	margin-left:34px;
+	transition-duration: 0.1s;
+	outline: 0px dashed rgba(255, 255, 255, 0.6);
 }
-/*.other_contact>a[title="facebook"] {
-	margin-left:34px;
-}*/
-a[title="twitter"] {
-	margin-left:38px;
+.other_contact>a:hover {
+	outline: 1px dashed rgba(255, 255, 255, 0.6);
+	transition-duration: 0.2s;
 }
-a[title="chto_eto"], a[title="instagram"] {
-	margin-left:43px;
+.other_contact>a:active {
+	line-height: 61px;
+	font-weight: 400;
+	transform: scale(1.2);
+	outline: 1px dashed rgba(255, 255, 255, 0.6);
+	transition-duration: 0.1s;
 }
-a[title="github"], a[title="i_chto_eto"] {
-	margin-left:42px;
-}
+a[title="twitter"] {margin-left:38px;}
+a[title="chto_eto"], a[title="instagram"] {margin-left:43px;}
+a[title="github"], a[title="i_chto_eto"] {margin-left:42px;}
+
 
 .map {
 	float: left;

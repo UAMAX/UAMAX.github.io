@@ -5,30 +5,31 @@
 	<title>Максим Акулов - Веб-разработчик</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.min.css"/>
 </head>
 <body>
 	<header>
 		<nav>
-			<div class="logo">Максим Акулов</div>
+			<div class="logo animate__animated animate__fadeInLeft">Максим Акулов</div>
 			<div class="menu">
 				<ul>
-					<li>ОБО МНЕ</li>
-					<li>УСЛУГИ</li>
-					<li>КЕЙСЫ</li>
-					<li>ПРАЙС</li>
-					<li>ОТЗЫВЫ</li>
-					<li>КОНТАКТЫ</li>
+					<li class="animate__animated animate__flipInX"><a href="#">ОБО МНЕ</a></li>
+					<li class="animate__animated animate__flipInX"><a href="#">УСЛУГИ</a></li>
+					<li class="animate__animated animate__flipInX"><a href="#">КЕЙСЫ</a></li>
+					<li class="animate__animated animate__flipInX"><a href="#">ПРАЙС</a></li>
+					<li class="animate__animated animate__flipInX"><a href="#">ОТЗЫВЫ</a></li>
+					<li class="animate__animated animate__flipInX"><a href="#">КОНТАКТЫ</a></li>
 				</ul>
 			</div>
 		</nav>
 	</header>
 	<main>
 		<div class="main">
-			<div class="title_container">
+			<div class="title_container animate__animated animate__fadeInLeft">
 				<h1>Привет <br> Я Максим Акулов</h1>
 				<h4>Фулл стек веб-разработчик</h4>
-				<input type="submit" value="Обо мне">
-				<input type="submit" value="Мои работы">
+				<input type="button" value="Обо мне">
+				<input type="button" value="Мои работы">
 			</div>
 		</div>
 		<div class="info_about_me">
@@ -163,9 +164,9 @@
 				</div>
 				<h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
 				<form action="">
-					<input type="text" name="name" id="name" placeholder="Имя">
-					<input type="text" name="mail" id="mail" placeholder="Email">
-					<textarea name="message" id="area" placeholder="Сообщение"></textarea>
+					<input type="text" name="name" id="name" placeholder="Имя" required pattern="[A-Za-zА-Яа-яЁё]">
+					<input type="email" name="email" id="email" placeholder="Email" required >
+					<textarea name="message" id="area" placeholder="Сообщение" required></textarea>
 					<input type="submit" id="send" value="Отправить">
 				</form>
 				<div class="other_contact">
